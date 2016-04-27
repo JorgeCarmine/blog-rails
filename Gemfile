@@ -30,7 +30,6 @@ gem 'devise'
 
 gem 'puma'
 
-gem 'pg'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -57,7 +56,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
+  gem 'pg'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
@@ -65,7 +64,5 @@ end
 
 group :production do
   gem 'pg'
-
   gem 'rails_12factor'
 end
-
