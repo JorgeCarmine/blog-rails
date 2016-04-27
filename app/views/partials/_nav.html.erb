@@ -1,0 +1,48 @@
+	<nav>
+		<div class="nav-wrapper red darken-3">
+			<a href="/" class="brand-logo">Ayuda Tareas ITT</a>
+			<a href="/" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="/articles">Artículos</a></li>
+				<li><a href="#">Calculo</a></li>
+				<li><a href="#">Fisica</a></li>
+				<li><a href="#">Electronica</a></li>
+				<li><a href="#">Programación</a></li>
+				<% if user_signed_in? %>
+					<li>
+						<%= link_to "Cerrer Sesión", destroy_user_session_path, method: :delete %>
+						<i class="large material-icons">power_settings_new</i>
+					</li>
+				<% else %>
+					<li>
+						<%= link_to "Iniciar Sesión", new_user_session_path %>
+						<i class="large material-icons">--</i>
+					</li>
+					<li>
+						<%= link_to "Crear cuenta", new_user_registration_path %>
+						<i class="large material-icons">--</i>
+					</li>
+				<% end %>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="/articles">Artículos</a></li>
+				<li><a href="#">Calculo</a></li>
+				<li><a href="#">Fisica</a></li>
+				<li><a href="#">Electronica</a></li>
+				<li><a href="#">Programación</a></li>
+				<% if user_signed_in? %>
+					<li>
+						<%= link_to "Cerrar Sesión", destroy_user_session_path, method: :delete %>
+						<i class="large material-icons">power_settings_new</i>
+					</li>
+				<% else %>
+					<li>
+						<%= link_to "Iniciar Sesión", new_user_session_path %>
+					</li>
+					<li>
+						<%= link_to "Crear cuenta", new_user_registration_path %>
+					</li>
+				<% end %>
+			</ul>
+		</div>
+	</nav>	

@@ -1,0 +1,6 @@
+<h1><%= @article.title %></h1>
+<% unless @article.user.nil? %>
+	<p>Por: <strong><%= @article.user.email %></strong></p>
+<% end %>
+<p><%= @article.body %></p>
+<p>Numero de visitas: <strong><%= @article.visits_count %></strong></p>

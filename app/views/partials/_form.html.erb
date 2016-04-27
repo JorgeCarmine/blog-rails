@@ -1,0 +1,21 @@
+<%= form_for(@article) do |f| %>
+	<form class="col s12">
+	<div class="input-field col s6">
+		<%= f.text_field :title, {class: "validate"} %>
+		<label>Titulo</label>
+	</div>
+	<div class="input-field col s6">
+		<%= f.text_area :body, {class: "materialize-textarea auto-ajust"} %>
+		<label>Ariculo</label>
+	</div>
+	<div class="input-field col s6">
+		<%= f.submit "Guardar", {class: "btn waves-effect red darken-2"} %>
+	</div>
+	</form>
+<% end %>
+
+<script type="text/javascript">
+	$("#article_title").focus();
+	$("#article_body").focus();
+	$("#article_title").focus();
+</script>
