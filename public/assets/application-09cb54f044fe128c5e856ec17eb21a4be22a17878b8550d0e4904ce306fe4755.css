@@ -1,0 +1,45 @@
+/* line 1, /home/jorge/Documentos/Ruby/blog/app/assets/stylesheets/style.scss */
+.content {
+  margin-top: 3em;
+  margin-left: 18%;
+  margin-right: 18%;
+}
+
+/* line 7, /home/jorge/Documentos/Ruby/blog/app/assets/stylesheets/style.scss */
+.content-smille {
+  margin-top: 3em;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+/* line 13, /home/jorge/Documentos/Ruby/blog/app/assets/stylesheets/style.scss */
+.be-red {
+  color: #d50000;
+}
+
+/* line 17, /home/jorge/Documentos/Ruby/blog/app/assets/stylesheets/style.scss */
+.text {
+  color: #000;
+  text-decoration: none !important;
+}
+
+/* line 23, /home/jorge/Documentos/Ruby/blog/app/assets/stylesheets/style.scss */
+.auto-ajust {
+  resize: none;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
