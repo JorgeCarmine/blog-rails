@@ -1,4 +1,14 @@
 <%= form_for(@article) do |f| %>
+	<% if @article.errors.any? %>
+	<div id="error_explanation">
+		<h4><%= pluralize(@article.errors.count, "Errore") %> no se puede guardar</h4>
+		<ul>
+			<% @article.errors.full_messages.each do |msg| %>
+				<li class="card-panel red darken-1"><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+	<% end %>
 	<form class="col s12">
 	<div class="input-field col s6">
 		<%= f.text_field :title, {class: "validate"} %>

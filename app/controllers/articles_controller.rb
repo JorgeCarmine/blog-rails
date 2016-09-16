@@ -28,14 +28,6 @@ class ArticlesController < ApplicationController
 		end
 	end
 
-	#DELETE /articles
-	def destroy
-		@article = Article.find(params[:id])
-		@article.destroy
-
-		redirect_to articles_path
-	end
-
 	#GET articles/:id/edit
 	def edit
 		@article = Article.find(params[:id])
@@ -52,6 +44,14 @@ class ArticlesController < ApplicationController
 		end
 	end
 
+	#DELETE /articles
+	def destroy
+		@article = Article.find(params[:id])
+		@article.destroy
+
+		redirect_to articles_path
+	end
+
 
 	private
 
@@ -65,4 +65,5 @@ class ArticlesController < ApplicationController
 	def article_params
 		params.require(:article).permit(:title, :body)	
 	end
+
 end

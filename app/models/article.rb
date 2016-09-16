@@ -9,7 +9,8 @@ class Article < ActiveRecord::Base
 		self.update(visits_count: self.visits_count + 1)
 	end
 
-	def method_name
-		selt.visits_count = 0	
+	def set_visits_count
+		self.visits_count = 0	
 	end
+
 end
