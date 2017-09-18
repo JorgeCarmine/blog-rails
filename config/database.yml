@@ -12,7 +12,7 @@ default: &default
 development:
   adapter: mysql2
   username: root
-  password: JorgeUTVT777
+  password: gearsofwar123
   host: 127.0.0.1
   port: 3306 
   database: railsbase
