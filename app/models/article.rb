@@ -1,5 +1,5 @@
-class Article < ActiveRecord::Base
-	belongs_to :user
+class Article < ApplicationRecord
+	belongs_to :user, optional: true
 	validates :title, presence: true, uniqueness: true
 	validates :body, presence: true, length: {minimum: 25}
 

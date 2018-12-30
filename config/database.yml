@@ -11,11 +11,11 @@ default: &default
 
 development:
   adapter: mysql2
-  username: root
-  password: gearsofwar123
+  username: jorge
+  password: GEARSOFWAR123
   host: 127.0.0.1
   port: 3306 
-  database: railsbase
+  database: blog-rails
   pool: 5
   timeout: 5000
 
